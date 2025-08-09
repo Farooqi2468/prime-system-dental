@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BrightSmile Dental Website
 
-## Getting Started
+A **fully responsive and modern dental clinic website** built with **Next.js**, **TailwindCSS**, and **shadcn/ui**.
+The site provides an elegant and user-friendly interface for potential patients to learn about the clinic, explore services, and easily book appointments.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Responsive Design** – Optimized for all devices (mobile, tablet, desktop).
+- **Modern UI** – Built with shadcn/ui and TailwindCSS for a clean and accessible design.
+- **Pages**:
+
+  - **Home Page** – Showcases the clinic’s main highlights.
+  - **About Page** – Provides details about the clinic and its mission.
+  - **Services Page** – Lists dental treatments with a clear, organized layout.
+  - **Contact Page** – Includes a contact form and clinic information.
+
+- **Navigation** – Sticky, responsive navbar for smooth navigation.
+- **Footer** – Clean footer with essential links and contact details.
+- **Call to Action** – “Book Appointment” button prominently placed.
+
+## 🛠 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+## 📂 Project Structure
+
+```
+/app
+  ├── about/
+  ├── services/
+  ├── contact/
+  ├── page.tsx        # Home Page
+/components
+  ├── Header.tsx      # Navbar
+  ├── Footer.tsx
+  ├── ui/             # shadcn components
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Installation & Setup
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **Clone the repository**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/pawantech12/brightsmile-dental-website.git
+   cd brightsmile-dental-website
+   ```
 
-## Learn More
+2. **Install dependencies**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   pnpm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run development server**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   pnpm run dev
+   ```
 
-## Deploy on Vercel
+4. **Open in browser**
+   Visit: `http://localhost:3000`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project can be easily deployed on [Vercel](https://vercel.com/) for optimal performance.
+
+## 📞 Contact
+
+If you’d like a similar modern, responsive website for your clinic or business, feel free to connect:
+
+- **Name**: Pawan Kumavat
+- **Email**: [pawankumavat042@gmail.com](mailto:pawankumavat042@gmail.com)
+- **GitHub**: [pawantech12](https://github.com/pawantech12)
+- **Portfolio**: [pawankumavat](https://pawan-kumavat.vercel.app/)
