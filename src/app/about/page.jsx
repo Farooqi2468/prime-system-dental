@@ -8,7 +8,7 @@ import { Users, Award, Shield, Heart, Smile } from "lucide-react";
 export default function About() {
   const teamMembers = [
     {
-      name: "Dr. Sarah Smith",
+      name: "Dr. Ayesha Khan",
       role: "Lead Dentist & Founder",
       credentials: "DDS, MS",
       experience: "15+ years",
@@ -18,7 +18,7 @@ export default function About() {
         "https://images.pexels.com/photos/5207262/pexels-photo-5207262.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
     {
-      name: "Dr. Michael Johnson",
+      name: "Dr. Ali Khan",
       role: "Pediatric Dentist",
       credentials: "DDS, Pediatric Specialty",
       experience: "10+ years",
@@ -32,7 +32,7 @@ export default function About() {
         "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
     {
-      name: "Dr. Emily Chen",
+      name: "Dr. Fatima Ahmed",
       role: "Oral Surgeon",
       credentials: "DDS, Oral Surgery Specialty",
       experience: "12+ years",
@@ -75,7 +75,7 @@ export default function About() {
       year: "2008",
       event: "Practice Founded",
       description:
-        "Dr. Smith established BrightSmile Dental with a vision of exceptional patient care",
+        "Dr. Smith established Dev Co Dental with a vision of exceptional patient care",
     },
     {
       year: "2012",
@@ -110,17 +110,17 @@ export default function About() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sky-50 to-cyan-50 py-20">
+      <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <Badge className="bg-sky-100 text-sky-700 hover:bg-sky-100">
+            <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">
               About Us
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
               Committed to Your Smile
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              For over 15 years, BrightSmile Dental has been providing
+              For over 15 years, Dev Co Dental has been providing
               exceptional dental care with a personal touch. Meet our team and
               learn about our commitment to excellence.
             </p>
@@ -138,7 +138,7 @@ export default function About() {
                   Our Story
                 </h2>
                 <p className="text-lg text-gray-600">
-                  BrightSmile Dental was founded in 2008 with a simple mission:
+                  Dev Co Dental was founded in 2008 with a simple mission:
                   to provide exceptional dental care in a comfortable, welcoming
                   environment. What started as a small practice has grown into a
                   comprehensive dental center serving thousands of satisfied
@@ -154,18 +154,18 @@ export default function About() {
               </div>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center space-y-2">
-                  <div className="text-3xl font-bold text-sky-500">15+</div>
+                  <div className="text-3xl font-bold text-blue-600">15+</div>
                   <div className="text-gray-600">Years of Excellence</div>
                 </div>
                 <div className="text-center space-y-2">
-                  <div className="text-3xl font-bold text-sky-500">5000+</div>
+                  <div className="text-3xl font-bold text-blue-600">5000+</div>
                   <div className="text-gray-600">Happy Patients</div>
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-sky-100 to-cyan-100 rounded-2xl p-8 h-96 flex items-center justify-center">
+            <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8 h-96 flex items-center justify-center">
               <div className="text-center space-y-4">
-                <div className="w-24 h-24 bg-sky-500 rounded-full flex items-center justify-center mx-auto">
+                <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto">
                   <Smile className="h-12 w-12 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">
@@ -240,7 +240,7 @@ export default function About() {
                 className="hover:shadow-lg transition-shadow duration-300"
               >
                 <CardContent className="p-6 space-y-6">
-                  <div className="aspect-square bg-gradient-to-br from-sky-100 to-cyan-100 rounded-xl overflow-hidden">
+                  <div className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl overflow-hidden">
                     <img
                       src={member.image}
                       alt={member.name}
@@ -252,7 +252,7 @@ export default function About() {
                       <h3 className="text-xl font-bold text-gray-900">
                         {member.name}
                       </h3>
-                      <p className="text-sky-500 font-medium">{member.role}</p>
+                      <p className="text-blue-600 font-medium">{member.role}</p>
                       <p className="text-sm text-gray-500">
                         {member.credentials} • {member.experience}
                       </p>
@@ -299,7 +299,7 @@ export default function About() {
                 className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8"
               >
                 <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-sky-500 rounded-full flex items-center justify-center">
+                  <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-sm">
                       {milestone.year}
                     </span>
@@ -320,7 +320,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-sky-500 to-cyan-500 py-20">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
@@ -334,15 +334,15 @@ export default function About() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-white text-sky-500 hover:bg-gray-100"
+                className="bg-white text-blue-600 hover:bg-gray-100"
               >
                 Schedule Consultation
               </Button>
               <Button
                 size="lg"
-                className="bg-white text-sky-500 hover:bg-gray-100"
+                className="bg-white text-blue-600 hover:bg-gray-100"
               >
-                Call (555) 123-4567
+                Call +92 300 1234567
               </Button>
             </div>
           </div>

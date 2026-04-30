@@ -1,77 +1,45 @@
-# BrightSmile Dental Website
+# Dev Co Dental
 
-A **fully responsive and modern dental clinic website** built with **Next.js**, **TailwindCSS**, and **shadcn/ui**.
-The site provides an elegant and user-friendly interface for potential patients to learn about the clinic, explore services, and easily book appointments.
+A modern, professional web application for **Dev Co Dental**, a premier dental clinic located in Lahore, Pakistan. Built with Next.js, React, and Tailwind CSS, this project provides a responsive, high-performance, and visually stunning digital experience for patients.
 
-## 🚀 Features
+## Features
 
-- **Responsive Design** – Optimized for all devices (mobile, tablet, desktop).
-- **Modern UI** – Built with shadcn/ui and TailwindCSS for a clean and accessible design.
-- **Pages**:
+- **Modern Gradient UI**: Built with a custom vibrant `blue-to-purple` gradient color scheme.
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
+- **Interactive Components**: Including functional contact buttons (Call, Email, SMS, Booking), tabs for exploring services, and animated elements.
+- **Next.js Image Optimization**: Incorporating `next/image` for fast, scalable hero and testimonial images.
+- **Contact & Booking Integration**: User-friendly forms and contact sections adapted for the Pakistani market (`+92` formatting).
 
-  - **Home Page** – Showcases the clinic’s main highlights.
-  - **About Page** – Provides details about the clinic and its mission.
-  - **Services Page** – Lists dental treatments with a clear, organized layout.
-  - **Contact Page** – Includes a contact form and clinic information.
+## Technology Stack
 
-- **Navigation** – Sticky, responsive navbar for smooth navigation.
-- **Footer** – Clean footer with essential links and contact details.
-- **Call to Action** – “Book Appointment” button prominently placed.
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Library**: [React 18](https://react.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Components**: UI elements built with [Radix UI](https://www.radix-ui.com/) and [Lucide React](https://lucide.dev/) for iconography.
+- **Forms**: React hook forms with optimized state management.
 
-## 🛠 Tech Stack
+## Setup & Development
 
-- **Framework**: [Next.js](https://nextjs.org/) (App Router)
-- **Styling**: [TailwindCSS](https://tailwindcss.com/)
-- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
+To run the development server locally:
 
-## 📂 Project Structure
-
-```
-/app
-  ├── about/
-  ├── services/
-  ├── contact/
-  ├── page.tsx        # Home Page
-/components
-  ├── Header.tsx      # Navbar
-  ├── Footer.tsx
-  ├── ui/             # shadcn components
-```
-
-## 📦 Installation & Setup
-
-1. **Clone the repository**
-
+1. Install dependencies:
    ```bash
-   git clone https://github.com/pawantech12/brightsmile-dental-website.git
-   cd brightsmile-dental-website
+   npm install
    ```
 
-2. **Install dependencies**
-
+2. Run the development server:
    ```bash
-   pnpm install
+   npm run dev
    ```
 
-3. **Run development server**
+3. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-   ```bash
-   pnpm run dev
-   ```
+## Project Structure
 
-4. **Open in browser**
-   Visit: `http://localhost:3000`
+- `/src/app`: Contains all pages including Home, About, Services, and Contact.
+- `/src/components`: Reusable UI components (Header, Footer, Buttons, Cards).
+- `/public`: Static assets like images and Next.js icons.
 
-## 🌐 Deployment
+## License
 
-This project can be easily deployed on [Vercel](https://vercel.com/) for optimal performance.
-
-## 📞 Contact
-
-If you’d like a similar modern, responsive website for your clinic or business, feel free to connect:
-
-- **Name**: Pawan Kumavat
-- **Email**: [pawankumavat042@gmail.com](mailto:pawankumavat042@gmail.com)
-- **GitHub**: [pawantech12](https://github.com/pawantech12)
-- **Portfolio**: [pawankumavat](https://pawan-kumavat.vercel.app/)
+Copyright © 2024 Dev Co Dental. All rights reserved.

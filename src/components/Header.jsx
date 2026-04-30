@@ -12,11 +12,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-sky-500 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <Smile className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl max-sm:hidden font-bold text-gray-900">
-                BrightSmile Dental
+                Dev Co Dental
               </span>
             </div>
           </div>
@@ -49,9 +49,9 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="hidden sm:flex items-center space-x-2 text-sm text-gray-600">
               <Phone className="h-4 w-4" />
-              <span>(555) 123-4567</span>
+              <span>+92 300 1234567</span>
             </div>
-            <Button className="bg-sky-500 hover:bg-sky-600">
+            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0">
               Book Appointment
             </Button>
             {/* Mobile Menu Button */}
@@ -102,9 +102,9 @@ const Header = () => {
           </Link>
           <div className="flex items-center space-x-2 text-sm text-gray-600">
             <Phone className="h-4 w-4" />
-            <span>(555) 123-4567</span>
+            <span>+92 300 1234567</span>
           </div>
-          <Button className="w-full bg-sky-500 hover:bg-sky-600">
+          <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0">
             Book Appointment
           </Button>
         </div>

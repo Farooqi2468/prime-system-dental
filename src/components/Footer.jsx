@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <Smile className="h-5 w-5 text-white" />
               </div>
-              <span className="text-lg font-bold">BrightSmile Dental</span>
+              <span className="text-lg font-bold">Dev Co Dental</span>
             </div>
             <p className="text-gray-400">
               Providing exceptional dental care with a personal touch since
@@ -62,11 +62,11 @@ const Footer = () => {
             <div className="space-y-2 text-gray-400">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>(555) 123-4567</span>
+                <span>+92 300 1234567</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>123 Dental Ave, City, ST 12345</span>
+                <span>Lahore, Pakistan</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="h-4 w-4" />
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 BrightSmile Dental. All rights reserved.</p>
+          <p>&copy; 2024 Dev Co Dental. All rights reserved.</p>
         </div>
       </div>
     </footer>

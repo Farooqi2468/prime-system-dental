@@ -274,22 +274,22 @@ export default function Services() {
     {
       name: "Digital X-Rays",
       description: "90% less radiation with instant, high-quality images",
-      icon: <Camera className="h-8 w-8 text-sky-500" />,
+      icon: <Camera className="h-8 w-8 text-blue-600" />,
     },
     {
       name: "CEREC Same-Day Crowns",
       description: "Custom crowns designed and created in a single visit",
-      icon: <Zap className="h-8 w-8 text-sky-500" />,
+      icon: <Zap className="h-8 w-8 text-blue-600" />,
     },
     {
       name: "Laser Dentistry",
       description: "Minimally invasive treatments with faster healing",
-      icon: <Activity className="h-8 w-8 text-sky-500" />,
+      icon: <Activity className="h-8 w-8 text-blue-600" />,
     },
     {
       name: "3D Imaging",
       description: "Precise treatment planning with advanced 3D technology",
-      icon: <Eye className="h-8 w-8 text-sky-500" />,
+      icon: <Eye className="h-8 w-8 text-blue-600" />,
     },
   ];
 
@@ -309,10 +309,10 @@ export default function Services() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sky-50 to-cyan-50 py-20">
+      <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <Badge className="bg-sky-100 text-sky-700 hover:bg-sky-100">
+            <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">
               Our Services
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
@@ -336,7 +336,7 @@ export default function Services() {
                 <TabsTrigger
                   key={category.id}
                   value={category.id}
-                  className="flex flex-col items-center space-y-2 p-4 data-[state=active]:bg-sky-100 data-[state=active]:text-sky-700"
+                  className="flex flex-col items-center space-y-2 p-4 data-[state=active]:bg-blue-100 data-[state=active]:text-blue-700"
                 >
                   {category.icon}
                   <span className="text-sm font-medium">{category.title}</span>
@@ -399,7 +399,7 @@ export default function Services() {
                             ))}
                           </ul>
                         </div>
-                        <Button className="w-full bg-sky-500 hover:bg-sky-600">
+                        <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 border-0">
                           Schedule Appointment
                           <ArrowRight className="h-4 w-4 ml-2" />
                         </Button>
@@ -520,7 +520,7 @@ export default function Services() {
                     key={index}
                     className="flex items-center space-x-2 text-sm text-gray-700"
                   >
-                    <Shield className="h-4 w-4 text-sky-500" />
+                    <Shield className="h-4 w-4 text-blue-600" />
                     <span>{provider}</span>
                   </div>
                 ))}
@@ -563,7 +563,7 @@ export default function Services() {
                   variant="outline"
                   className="border-red-500 text-red-500 hover:bg-red-50"
                 >
-                  (555) 123-4567
+                  +92 300 1234567
                 </Button>
               </Card>
               <Card className="p-6 space-y-4">
@@ -600,7 +600,7 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-sky-500 to-cyan-500 py-20">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
@@ -614,15 +614,15 @@ export default function Services() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-white text-sky-500 hover:bg-gray-100"
+                className="bg-white text-blue-600 hover:bg-gray-100"
               >
                 Schedule Consultation
               </Button>
               <Button
                 size="lg"
-                className="bg-white text-sky-500 hover:bg-gray-100"
+                className="bg-white text-blue-600 hover:bg-gray-100"
               >
-                Call (555) 123-4567
+                Call +92 300 1234567
               </Button>
             </div>
           </div>

@@ -70,23 +70,26 @@ export default function Contact() {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      value: "(555) 123-4567",
+      value: "+92 300 1234567",
       description: "Call us during business hours",
       action: "Call Now",
+      href: "tel:+923001234567",
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      value: "info@brightsmile.com",
+      value: "contact@devcodental.pk",
       description: "Send us a message anytime",
       action: "Send Email",
+      href: "mailto:contact@devcodental.pk",
     },
     {
       icon: <MessageCircle className="h-6 w-6" />,
       title: "Text",
-      value: "(555) 123-4567",
+      value: "+92 300 1234567",
       description: "Text us for quick questions",
       action: "Send Text",
+      href: "sms:+923001234567",
     },
     {
       icon: <Calendar className="h-6 w-6" />,
@@ -94,6 +97,7 @@ export default function Contact() {
       value: "24/7 Available",
       description: "Schedule appointments online",
       action: "Book Now",
+      href: "#appointment-form",
     },
   ];
 
@@ -123,10 +127,10 @@ export default function Contact() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sky-50 to-cyan-50 py-20">
+      <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <Badge className="bg-sky-100 text-sky-700 hover:bg-sky-100">
+            <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">
               Contact Us
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
@@ -167,17 +171,19 @@ export default function Contact() {
                     <h3 className="text-lg font-semibold text-gray-900">
                       {method.title}
                     </h3>
-                    <p className="text-sky-500 font-medium">{method.value}</p>
+                    <p className="text-blue-600 font-medium">{method.value}</p>
                     <p className="text-sm text-gray-600">
                       {method.description}
                     </p>
                   </div>
-                  <Button
-                    variant="outline"
-                    className="w-full border-sky-500 text-sky-500 hover:bg-sky-50"
-                  >
-                    {method.action}
-                  </Button>
+                  <a href={method.href} className="w-full block">
+                    <Button
+                      variant="outline"
+                      className="w-full border-blue-600 text-blue-600 hover:bg-sky-50"
+                    >
+                      {method.action}
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
@@ -190,7 +196,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Appointment Form */}
-            <Card className="p-8">
+            <Card className="p-8" id="appointment-form">
               <CardHeader className="px-0">
                 <CardTitle className="text-2xl">
                   Schedule an Appointment
@@ -359,7 +365,7 @@ export default function Contact() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-sky-500 hover:bg-sky-600 text-lg py-3"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 border-0 text-lg py-3"
                   >
                     Request Appointment
                   </Button>
@@ -378,27 +384,23 @@ export default function Contact() {
               <Card className="p-6">
                 <CardHeader className="px-0">
                   <CardTitle className="flex items-center space-x-2">
-                    <MapPin className="h-5 w-5 text-sky-500" />
+                    <MapPin className="h-5 w-5 text-blue-600" />
                     <span>Office Location</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="px-0 space-y-4">
                   <div className="space-y-2">
                     <p className="font-medium text-gray-900">
-                      BrightSmile Dental
+                      Dev Co Dental
                     </p>
                     <p className="text-gray-600">
-                      123 Dental Avenue
-                      <br />
-                      Suite 200
-                      <br />
-                      Cityville, ST 12345
+                      Lahore, Pakistan
                     </p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button
                       variant="outline"
-                      className="flex items-center space-x-2 border-sky-500 text-sky-500 hover:bg-sky-50"
+                      className="flex items-center space-x-2 border-blue-600 text-blue-600 hover:bg-sky-50"
                     >
                       <Navigation className="h-4 w-4" />
                       <span>Get Directions</span>
@@ -418,7 +420,7 @@ export default function Contact() {
               <Card className="p-6">
                 <CardHeader className="px-0">
                   <CardTitle className="flex items-center space-x-2">
-                    <Clock className="h-5 w-5 text-sky-500" />
+                    <Clock className="h-5 w-5 text-blue-600" />
                     <span>Office Hours</span>
                   </CardTitle>
                 </CardHeader>
@@ -457,7 +459,7 @@ export default function Contact() {
               <Card className="p-6">
                 <CardHeader className="px-0">
                   <CardTitle className="flex items-center space-x-2">
-                    <Users className="h-5 w-5 text-sky-500" />
+                    <Users className="h-5 w-5 text-blue-600" />
                     <span>What to Expect</span>
                   </CardTitle>
                 </CardHeader>
@@ -540,7 +542,7 @@ export default function Contact() {
           </div>
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">Have more questions?</p>
-            <Button className="bg-sky-500 hover:bg-sky-600">
+            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 border-0">
               Contact Us Today
             </Button>
           </div>

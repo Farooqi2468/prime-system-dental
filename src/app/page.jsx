@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 import {
   Star,
   Clock,
@@ -21,7 +22,7 @@ import {
 export default function Home() {
   const services = [
     {
-      icon: <Smile className="h-8 w-8 text-sky-500" />,
+      icon: <Smile className="h-8 w-8 text-blue-600" />,
       title: "General Dentistry",
       description:
         "Comprehensive dental care including cleanings, fillings, and preventive treatments.",
@@ -33,14 +34,14 @@ export default function Home() {
       ],
     },
     {
-      icon: <Zap className="h-8 w-8 text-sky-500" />,
+      icon: <Zap className="h-8 w-8 text-blue-600" />,
       title: "Cosmetic Dentistry",
       description:
         "Transform your smile with our advanced cosmetic dental procedures.",
       features: ["Teeth Whitening", "Veneers", "Bonding", "Smile Makeovers"],
     },
     {
-      icon: <Shield className="h-8 w-8 text-sky-500" />,
+      icon: <Shield className="h-8 w-8 text-blue-600" />,
       title: "Restorative Dentistry",
       description:
         "Restore your teeth's function and appearance with our expert treatments.",
@@ -52,7 +53,7 @@ export default function Home() {
       ],
     },
     {
-      icon: <Heart className="h-8 w-8 text-sky-500" />,
+      icon: <Heart className="h-8 w-8 text-blue-600" />,
       title: "Pediatric Dentistry",
       description:
         "Gentle, kid-friendly dental care in a comfortable environment.",
@@ -67,19 +68,19 @@ export default function Home() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Ayesha Khan",
       rating: 5,
       text: "Dr. Smith and the team are absolutely wonderful. They made my dental implant procedure so comfortable and the results are amazing!",
       treatment: "Dental Implants",
     },
     {
-      name: "Michael Chen",
+      name: "Ali Khan",
       rating: 5,
       text: "Best dental experience I've ever had. The office is modern, staff is friendly, and Dr. Smith is incredibly skilled and gentle.",
       treatment: "Cosmetic Dentistry",
     },
     {
-      name: "Emily Davis",
+      name: "Fatima Ahmed",
       rating: 5,
       text: "My kids actually look forward to their dental visits now! The pediatric team is fantastic with children.",
       treatment: "Pediatric Care",
@@ -96,12 +97,12 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sky-50 to-cyan-50 py-20">
+      <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="bg-sky-100 text-sky-700 hover:bg-sky-100">
+                <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">
                   ✨ Award-Winning Dental Care
                 </Badge>
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
@@ -114,13 +115,13 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-sky-500 hover:bg-sky-600">
+                <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 border-0">
                   Schedule Consultation
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-sky-500 text-sky-500 hover:bg-sky-50"
+                  className="border-blue-600 text-blue-600 hover:bg-sky-50"
                 >
                   View Services
                 </Button>
@@ -137,18 +138,24 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                <div className="bg-gradient-to-br from-sky-100 to-cyan-100 rounded-xl h-80 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-20 h-20 bg-sky-500 rounded-full flex items-center justify-center mx-auto">
-                      <Smile className="h-10 w-10 text-white" />
+              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                <div className="relative h-[400px] w-full">
+                  <Image
+                    src="/hero-bg.webp"
+                    alt="Modern Dental Care"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent flex items-end">
+                    <div className="p-8">
+                      <h3 className="text-2xl font-bold text-white mb-2">
+                        Modern Dental Care
+                      </h3>
+                      <p className="text-gray-200">
+                        State-of-the-art equipment & techniques
+                      </p>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900">
-                      Modern Dental Care
-                    </h3>
-                    <p className="text-gray-600">
-                      State-of-the-art equipment & techniques
-                    </p>
                   </div>
                 </div>
               </div>
@@ -163,7 +170,7 @@ export default function Home() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center space-y-2">
-                <div className="text-3xl md:text-4xl font-bold text-sky-500">
+                <div className="text-3xl md:text-4xl font-bold text-blue-600">
                   {stat.number}
                 </div>
                 <div className="text-gray-600">{stat.label}</div>
@@ -177,7 +184,7 @@ export default function Home() {
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <Badge className="bg-sky-100 text-sky-700 hover:bg-sky-100">
+            <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">
               Our Services
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -215,7 +222,7 @@ export default function Home() {
                         key={idx}
                         className="flex items-center space-x-2 text-sm text-gray-600"
                       >
-                        <div className="w-1.5 h-1.5 bg-sky-500 rounded-full"></div>
+                        <div className="w-1.5 h-1.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -228,7 +235,7 @@ export default function Home() {
             <Button
               size="lg"
               variant="outline"
-              className="border-sky-500 text-sky-500 hover:bg-sky-50"
+              className="border-blue-600 text-blue-600 hover:bg-sky-50"
             >
               View All Services
             </Button>
@@ -358,7 +365,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-sky-500 to-cyan-500 py-20">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
@@ -371,15 +378,15 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-white text-sky-500 hover:bg-gray-100"
+                className="bg-white text-blue-600 hover:bg-gray-100"
               >
                 Book Your Appointment
               </Button>
               <Button
                 size="lg"
-                className="bg-white text-sky-500 hover:bg-gray-100"
+                className="bg-white text-blue-600 hover:bg-gray-100"
               >
-                Call (555) 123-4567
+                Call +92 300 1234567
               </Button>
             </div>
           </div>
