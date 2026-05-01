@@ -78,10 +78,10 @@ export default function Contact() {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      value: "contact@devcodental.pk",
+      value: "contact@primesystemsdental.pk",
       description: "Send us a message anytime",
       action: "Send Email",
-      href: "mailto:contact@devcodental.pk",
+      href: "mailto:contact@primesystemsdental.pk",
     },
     {
       icon: <MessageCircle className="h-6 w-6" />,
@@ -391,7 +391,7 @@ export default function Contact() {
                 <CardContent className="px-0 space-y-4">
                   <div className="space-y-2">
                     <p className="font-medium text-gray-900">
-                      Dev Co Dental
+                      Prime Systems Dental
                     </p>
                     <p className="text-gray-600">
                       Lahore, Pakistan

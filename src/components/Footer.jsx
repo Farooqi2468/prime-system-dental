@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <Smile className="h-5 w-5 text-white" />
               </div>
-              <span className="text-lg font-bold">Dev Co Dental</span>
+              <span className="text-lg font-bold">Prime Systems Dental</span>
             </div>
             <p className="text-gray-400">
               Providing exceptional dental care with a personal touch since
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Dev Co Dental. All rights reserved.</p>
+          <p>&copy; 2024 Prime Systems Dental. All rights reserved.</p>
         </div>
       </div>
     </footer>
