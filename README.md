@@ -2,20 +2,6 @@
 
 A modern, professional web application for **Prime Systems Dental**, a premier dental clinic located in Lahore, Pakistan. Built with Next.js, React, and Tailwind CSS, this project provides a responsive, high-performance, and visually stunning digital experience for patients.
 
-## Screenshots
-
-### Hero Section
-![Hero Section](/screenshots/hero.png)
-
-### Our Services
-![Our Services](/screenshots/services.png)
-
-### Why Choose Us
-![Why Choose Us](/screenshots/features.png)
-
-### Service Details
-![Service Details](/screenshots/pricing.png)
-
 ## Features
 
 - **Modern Gradient UI**: Built with a custom vibrant `blue-to-purple` gradient color scheme.
