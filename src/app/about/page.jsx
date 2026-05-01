@@ -75,7 +75,7 @@ export default function About() {
       year: "2008",
       event: "Practice Founded",
       description:
-        "Dr. Smith established Dev Co Dental with a vision of exceptional patient care",
+        "Dr. Smith established Prime Systems Dental with a vision of exceptional patient care",
     },
     {
       year: "2012",
@@ -120,7 +120,7 @@ export default function About() {
               Committed to Your Smile
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              For over 15 years, Dev Co Dental has been providing
+              For over 15 years, Prime Systems Dental has been providing
               exceptional dental care with a personal touch. Meet our team and
               learn about our commitment to excellence.
             </p>
@@ -138,7 +138,7 @@ export default function About() {
                   Our Story
                 </h2>
                 <p className="text-lg text-gray-600">
-                  Dev Co Dental was founded in 2008 with a simple mission:
+                  Prime Systems Dental was founded in 2008 with a simple mission:
                   to provide exceptional dental care in a comfortable, welcoming
                   environment. What started as a small practice has grown into a
                   comprehensive dental center serving thousands of satisfied

@@ -16,7 +16,7 @@ const Header = () => {
                 <Smile className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl max-sm:hidden font-bold text-gray-900">
-                Dev Co Dental
+                Prime Systems Dental
               </span>
             </div>
           </div>
